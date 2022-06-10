@@ -13,8 +13,16 @@
     border-radius: 5px;
   }
   
-  .starspan {
-    color: red;
+  .fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    /* background-image: url("../../../assets/Images/office.2.png"); */
+    background-color: aquamarine;
+  
   }
   
   .field-icon {
@@ -48,7 +56,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    /* overflow: auto; */
+    overflow: auto;
     /* background-image: url("../../assets/images/office.1.png"); */
     ;
     background-color: #95A0E2;
@@ -64,10 +72,7 @@
   
   .inndercard {
     position: absolute;
-    /* width: 520px;
-    height: 599px; */
-  
-    width: 520px;
+    width: 550px;
     height: 599px;
     background: #FFFFFF;
     border-top-left-radius: 15px;
@@ -80,14 +85,14 @@
   
   .inputclass {
     height: 46px;
-    width: 410px;
-    left: 290px;
+    width: 420px;
+    left: 306px;
     top: 316px;
     border-radius: 5px;
     margin-bottom: 15px;
     border: 2px solid #C7C7C7;
     outline: none;
-  
+    padding-left: 20px;
     Font: 'Poppins';
   
   
@@ -111,8 +116,8 @@
   
   .imgdiv {
     height: 599px;
-    width: 390px;
-    margin-left: 42%;
+    width: 408px;
+    margin-left: 38%;
   
   
   }
@@ -123,7 +128,7 @@
     align-items: stretch;
     /* height: 100vh; */
     margin-top: 4%;
-    margin-left: 17%;
+    margin-left: 250px;
   
   }
   
@@ -275,7 +280,7 @@
   
     left: 26px;
   
-    top: 5px;
+    top: 2px;
   
     transition: 0.2s ease all;
   
@@ -283,18 +288,12 @@
   
   }
   
-  .image {
-    width: 40%;
-    margin-bottom: 5%;
-  }
-  
-  .password {
-    color: #3247D5;
-    margin-left: -224px;
-    margin-top: 18px;
-  }
-  
-  .forgotpassword {
-    color: #3247D5;
+  .placeholder {
+    display: inline-block;
+    min-height: 1em;
+    vertical-align: middle;
+    cursor: wait;
+    /* background-color: currentColor; */
+    opacity: .5;
   }
   
