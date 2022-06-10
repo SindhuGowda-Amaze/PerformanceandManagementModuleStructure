@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { PerformanceManagementService } from 'src/app/Pages/Services/performance-management.service';
+import Swal from 'sweetalert2';
+import * as XLSX from  'xlsx';
+
 
 @Component({
   selector: 'app-appraisal-report',
