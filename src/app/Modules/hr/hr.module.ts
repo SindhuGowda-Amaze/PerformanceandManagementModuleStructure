@@ -14,6 +14,8 @@ import { HrDashComponent } from './hr-dash/hr-dash.component';
 import { BellCurveFittingComponent } from './bell-curve-fitting/bell-curve-fitting.component';
 import { StaffScoreReportComponent } from './staff-score-report/staff-score-report.component';
 import { AppraisalReportComponent } from './appraisal-report/appraisal-report.component';
+import { SharedModule } from '../shared/shared.module';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import { AppraisalReportComponent } from './appraisal-report/appraisal-report.co
   ],
   imports: [
     CommonModule,
-    HRRoutingModule
+    HRRoutingModule,
+    SharedModule,
+   
   ]
 })
 export class HRModule { }
