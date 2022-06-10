@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { HRRoutingModule } from './hr-routing.module';
 import { HRComponent } from './hr.component';
+import { HrdashboardComponent } from './hrdashboard/hrdashboard.component';
 
 
 @NgModule({
   declarations: [
-    HRComponent
+    HRComponent,
+    HrdashboardComponent
   ],
   imports: [
     CommonModule,
