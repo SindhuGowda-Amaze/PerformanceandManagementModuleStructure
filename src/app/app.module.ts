@@ -8,6 +8,7 @@ import { HeaderComponent } from './pages/commonpages/header/header.component';
 import { SidebarComponent } from './pages/commonpages/sidebar/sidebar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { LoginComponent } from './Pages/login/login.component';
 
 
 
@@ -21,10 +22,12 @@ import { NgxPaginationModule } from 'ngx-pagination';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
