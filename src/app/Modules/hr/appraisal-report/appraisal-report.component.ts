@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-appraisal-report',
   templateUrl: './appraisal-report.component.html',
