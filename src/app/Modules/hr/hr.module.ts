@@ -3,11 +3,15 @@ import { CommonModule } from '@angular/common';
 
 import { HRRoutingModule } from './hr-routing.module';
 import { HRComponent } from './hr.component';
+import { HrdashboardComponent } from './hrdashboard/hrdashboard.component';
+import { HrappraisalCycleComponent } from './hrappraisal-cycle/hrappraisal-cycle.component';
 
 
 @NgModule({
   declarations: [
-    HRComponent
+    HRComponent,
+    HrdashboardComponent,
+    HrappraisalCycleComponent
   ],
   imports: [
     CommonModule,
