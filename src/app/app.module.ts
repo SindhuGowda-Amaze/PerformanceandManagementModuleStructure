@@ -6,6 +6,14 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './pages/commonpages/footer/footer.component';
 import { HeaderComponent } from './pages/commonpages/header/header.component';
 import { SidebarComponent } from './pages/commonpages/sidebar/sidebar.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgxPaginationModule } from 'ngx-pagination';
+
+
+
+
+
+
 
 
 @NgModule({
@@ -19,6 +27,11 @@ import { SidebarComponent } from './pages/commonpages/sidebar/sidebar.component'
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgxPaginationModule,
+ 
+
   ],
   providers: [],
   bootstrap: [AppComponent]
