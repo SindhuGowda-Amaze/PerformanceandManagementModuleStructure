@@ -399,4 +399,33 @@ export class PerformanceManagementService {
     return this.http.post(this.url, data);
   }
 
+
+
+
+  
+public GetPiPActionItemsForStaff() {
+
+  return this.http.get<any[]>(this.baseURL + "/Master/GetPiPActionItemsForStaff");
+}
+
+public InsertPiPActionItemsForStaff(data: any) {
+  debugger;
+  this.url = this.baseURL + '/Master/InsertPiPActionItemsForStaff';
+  return this.http.post(this.url, data);
+}
+
+
+public UpdatePipEmployeeComments(json: any) {
+  debugger
+  let APIURL = this.baseURL + "Master/UpdatePipEmployeeComments";
+  return this.http.post<any[]>(APIURL, json);
+}
+
+public GetStaffExitFormality() {
+  return this.http.get<any[]>(
+    this.host + "/Announcement/GetStaffExitFormality"
+  );
+}
+
+
 }
