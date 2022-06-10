@@ -7,9 +7,50 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HrappraisalCycleComponent implements OnInit {
 
-  constructor() { }
+  constructor(private PerformanceManagementService:PerformanceManagementService ) { }
 
+  appraisallist:any;
+  count:any;
+  search:any;
+ 
   ngOnInit(): void {
+    this.GetAppraisalCycle();
   }
+
+
+  public GetAppraisalCycle() {
+    this.PerformanceManagementService.GetAppraisalCycle().subscribe(
+      data => {
+        debugger
+      this.appraisallist=data;
+      this.count=this.appraisallist.length;
+      })
+  }
+
+  public delete(ID: any) {
+    debugger
+    Swal.fire({
+      title: 'Are you sure?',
+      text: 'You Want to delete it.',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonText: 'Yes, Delete it!',
+      cancelButtonText: 'No, keep it'
+    }).then((result) => {
+      if (result.value == true) {
+        this.PerformanceManagementService.DeleteAppraisalCycle(ID).subscribe(
+          data=>{
+          debugger
+          Swal.fire('Deleted Successfully')
+          this.GetAppraisalCycle();
+          // location.reload();
+        })
+      }
+    })
+  }
+
+
+
+
 
 }
