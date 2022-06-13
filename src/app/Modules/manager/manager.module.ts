@@ -6,6 +6,7 @@ import { ManagerComponent } from './manager.component';
 import { EmployeeKraMappingdashboardComponent } from './employee-kra-mappingdashboard/employee-kra-mappingdashboard.component';
 import { ManagerratingdashComponent } from './managerratingdash/managerratingdash.component';
 import { ManagerAppraisalComponent } from './manager-appraisal/manager-appraisal.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ManagerAppraisalComponent } from './manager-appraisal/manager-appraisal
   ],
   imports: [
     CommonModule,
-    ManagerRoutingModule
+    ManagerRoutingModule,
+    SharedModule,
   ]
 })
 export class ManagerModule { }

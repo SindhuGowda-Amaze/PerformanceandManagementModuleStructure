@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { EmployeeRoutingModule } from './employee-routing.module';
 import { EmployeeComponent } from './employee.component';
+import { SharedModule } from '../shared/shared.module';
 import { MyappraisalComponent } from './myappraisal/myappraisal.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 
@@ -20,6 +21,8 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     CommonModule,
+    EmployeeRoutingModule,
+    SharedModule,
     FormsModule,
     EmployeeRoutingModule,
     NgxPaginationModule,
