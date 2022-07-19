@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PerformanceManagementService } from '../../services/performance-management.service';
+import { PerformanceManagementService } from '../../Services/performance-management.service';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-sidebar',
