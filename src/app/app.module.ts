@@ -9,6 +9,7 @@ import { SidebarComponent } from './Pages/CommonPages/sidebar/sidebar.component'
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './Pages/login/login.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter/src/ng2-filter.module';
+import { DatePipe } from '@angular/common';
 
 
 @NgModule({
@@ -26,7 +27,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter/src/ng2-filter.module';
     HttpClientModule,
    
   ],
-  providers: [],
+  providers: [DatePipe ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

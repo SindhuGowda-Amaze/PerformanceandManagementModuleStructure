@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { PerformanceManagementService } from '../../../Pages/services/performance-management.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-bell-curve-fitting',

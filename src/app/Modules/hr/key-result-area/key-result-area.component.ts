@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PerformanceManagementService } from '../../../Pages/services/performance-management.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-key-result-area',

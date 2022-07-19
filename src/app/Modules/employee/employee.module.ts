@@ -22,10 +22,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     EmployeeRoutingModule,
-    SharedModule,
-    FormsModule,
-    EmployeeRoutingModule,
-    NgxPaginationModule,
+    // NgxPaginationModule,
+    SharedModule
 
 
  

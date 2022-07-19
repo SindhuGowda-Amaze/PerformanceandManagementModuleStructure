@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PerformanceManagementService } from 'src/app/pages/services/performance-management.service';
+import { PerformanceManagementService } from '../../../Pages/services/performance-management.service';
 @Component({
   selector: 'app-hrdashboard',
   templateUrl: './hrdashboard.component.html',

@@ -1,7 +1,7 @@
 import { DatePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { PerformanceManagementService } from 'src/app/Pages/Services/performance-management.service';
+import { PerformanceManagementService } from '../../../Pages/services/performance-management.service';
 import Swal from 'sweetalert2';
 
 @Component({

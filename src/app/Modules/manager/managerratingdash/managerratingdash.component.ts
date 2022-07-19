@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PerformanceManagementService } from 'src/app/Pages/Services/performance-management.service';
+import { PerformanceManagementService } from '../../../Pages/services/performance-management.service';
 
 @Component({
   selector: 'app-managerratingdash',

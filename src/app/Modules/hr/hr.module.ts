@@ -15,7 +15,8 @@ import { BellCurveFittingComponent } from './bell-curve-fitting/bell-curve-fitti
 import { StaffScoreReportComponent } from './staff-score-report/staff-score-report.component';
 import { AppraisalReportComponent } from './appraisal-report/appraisal-report.component';
 import { SharedModule } from '../shared/shared.module';
-import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { Ng2SearchPipeModule } from 'ng2-search-filter'
+import { FormsModule } from '@angular/forms'; 
 
 
 @NgModule({
@@ -31,12 +32,14 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     HrDashComponent,
     BellCurveFittingComponent,
     StaffScoreReportComponent,
-    AppraisalReportComponent
+    AppraisalReportComponent,
+   // Ng2SearchPipeModule
   ],
   imports: [
     CommonModule,
     HRRoutingModule,
     SharedModule,
+ 
    
   ]
 })

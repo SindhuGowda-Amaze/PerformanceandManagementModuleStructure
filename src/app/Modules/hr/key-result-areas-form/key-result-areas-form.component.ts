@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { PerformanceManagementService } from '../../../Pages/services/performance-management.service';
+import { ActivatedRoute } from '@angular/router';
+import Swal from 'sweetalert2';
+
+
 
 @Component({
   selector: 'app-key-result-areas-form',
@@ -24,6 +29,7 @@ export class KeyResultAreasFormComponent implements OnInit {
   tablecount: any;
   entity: any;
   kratype: any;
+  params:any
   ngOnInit(): void {
 
     this.GetKraMaster();

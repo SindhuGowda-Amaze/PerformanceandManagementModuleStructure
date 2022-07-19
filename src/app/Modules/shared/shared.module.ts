@@ -4,6 +4,8 @@ import { SharedRoutingModule } from './shared-routing.module';
 import { SharedComponent } from './shared.component';
 import { FormsModule } from '@angular/forms';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { NgxDropzoneModule } from 'ngx-dropzone';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 
 
@@ -15,11 +17,18 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     CommonModule,
     FormsModule,
     SharedRoutingModule,
+    NgxDropzoneModule,
+    NgxPaginationModule,
+    Ng2SearchPipeModule,
+  
     
 
   ],
   exports: [
     FormsModule,
+    NgxDropzoneModule,
+    NgxPaginationModule,
+    Ng2SearchPipeModule,
   ],
   providers: [
     // {

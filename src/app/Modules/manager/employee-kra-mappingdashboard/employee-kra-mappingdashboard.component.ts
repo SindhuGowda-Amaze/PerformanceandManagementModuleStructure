@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PerformanceManagementService } from 'src/app/Pages/Services/performance-management.service';
+import { PerformanceManagementService } from '../../../Pages/services/performance-management.service';
 import Swal from 'sweetalert2';
 @Component({
   selector: 'app-employee-kra-mappingdashboard',

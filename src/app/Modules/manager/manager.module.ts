@@ -7,6 +7,7 @@ import { EmployeeKraMappingdashboardComponent } from './employee-kra-mappingdash
 import { ManagerratingdashComponent } from './managerratingdash/managerratingdash.component';
 import { ManagerAppraisalComponent } from './manager-appraisal/manager-appraisal.component';
 import { SharedModule } from '../shared/shared.module';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PerformanceManagementService } from '../services/performance-management.service';
 import Swal from 'sweetalert2';
-import { PerformanceManagementService } from '../Services/performance-management.service';
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -17,7 +16,7 @@ export class LoginComponent implements OnInit {
   showpassword: any;
   result: any;
   admin:any;
-  constructor(private PerformanceManagementService: PerformanceManagementService) { }
+  constructor(public PerformanceManagementService: PerformanceManagementService) { }
 
   ngOnInit(): void {
     this.admin="Admin"
