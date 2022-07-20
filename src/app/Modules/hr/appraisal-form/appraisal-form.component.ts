@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PerformanceManagementService } from '../../../Pages/services/performance-management.service';
+import { PerformanceManagementService } from 'src/app/Pages/services/performance-management.service';
 import { ActivatedRoute } from '@angular/router';
 import Swal from 'sweetalert2';
 import { formatDate } from '@angular/common';

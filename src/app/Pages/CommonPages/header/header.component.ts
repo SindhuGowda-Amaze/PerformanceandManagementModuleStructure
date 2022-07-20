@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core' 
-import { PerformanceManagementService } from '../../Services/performance-management.service';
+import { PerformanceManagementService } from '../../services/performance-management.service'; 
 import Swal from 'sweetalert2';
 import { interval } from 'rxjs';
 @Component({
